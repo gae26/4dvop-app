@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
   haproxy:
-    build: haproxy/
+    build: .
     ports:
       - "80:80"
     depends_on:
